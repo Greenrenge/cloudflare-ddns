@@ -1,0 +1,4 @@
+docker build . -t ddns
+docker run -d --restart=always --name cloudflare-ddns ddns
+
+

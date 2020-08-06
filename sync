@@ -1,0 +1,14 @@
+#!/bin/bash
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+echo $DIR
+
+python3 -m venv venv
+source ./venv/bin/activate
+
+pip install requests
+echo "pip install requests"
+
+cd $DIR
+echo "running cloudflare-ddns.py"
+python cloudflare-ddns.py
