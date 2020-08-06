@@ -1,3 +1,10 @@
+# RUN IN DOCKER MODE
+
+1. change config in config.json
+2. docker build to image
+3. run it as daemon mode
+
+-------
 # :rocket: Cloudflare DDNS
 
 Dynamic DNS service based on Cloudflare! Access your home network remotely via a custom domain name without a static IP!
